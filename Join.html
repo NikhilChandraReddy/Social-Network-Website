@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="pet.css">
+
+</head>
+<body id="wrapper">
+
+<header >
+    <meta charset="UTF-8">
+    <title>Joining Page</title>
+    <h1>SOCIAL NETWORK</h1>
+</header>
+
+<div class="row">
+  <div class="column left" >
+
+    <nav>
+<a href='Profile.php' > Profile Home </a> <br>
+<a href='Page.php' > All Pages </a> <br>
+<a href='Page1.php' > Pages you Created </a> <br>
+<a href='Page2.php' > Pages you Joined</a> <br>
+<a href='CreatePage.html' > Create Page </a> <br>
+<a href='#' > Join Page </a> <br>
+<a href='View.html' > View Page </a> <br>
+<a href='Update.html' > Update Page Information </a><br>
+<a href='./Logout.php' > Logout </a>  
+</nav>
+
+  </div>
+  <div class="column right" >
+   <img src="xxx.jpg" height="300px" width="100%">
+
+    <h2><font size="5">Enter the Page Name To Join</font></h2>
+    <p>Required information is marked with an asterick(*)</p><br>
+  <form action="Join.php" method="post">
+      Enter Page Name*:
+       <input type="text" name="Page_Name" maxlength="100" required><br><br>
+
+        <input type="submit" value="Join">
+        <input type="reset">
+  <br>
+    
+
+  </form>
+  </div>
+</div>
+
+</body>
+</html>

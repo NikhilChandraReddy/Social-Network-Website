@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="pet.css">
+
+</head>
+<body id="wrapper">
+
+<header >
+    <meta charset="UTF-8">
+    <title>Create Account</title>
+    <h1>SOCIAL NETWORK</h1>
+</header>
+
+<div class="row">
+  <div class="column left" >
+
+    <nav>
+<a href='index.html' > Home </a> <br>
+<a href='aboutUs.html' > About Project </a> <br>
+<a href='login.html' > Login </a> 
+</nav>
+
+  </div>
+  <div class="column right" >
+   <img src="Media\xxx.jpg" height="300px" width="100%">
+
+
+    <h2><font size="5">Create your Account</font></h2>
+    <p>Required information is marked with an asterick(*)</p><br>
+  <form action="CreatingAccount.php" method="post">
+      First name*:
+       <input type="text" name="F_name" maxlength="255" required><br><br>
+
+      Last name*:
+       <input type="text" name="L_name" maxlength="255" required><br><br>
+
+      Date of Birth*:
+       <input type="date" name="DOB" min="1940-01-01" max="2018-12-31" required><br><br>
+      Phone number:
+       <input type="tel" id="phone" name="Phone_no"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required>
+
+       <span class="note"><cite>Format: 123-456-7890</cite></span><br><br>
+
+      Email*:
+       <input type="email" name="Email" maxlength="100" required><br><br>
+
+      Gender*:<br>
+       <input type="radio" name="Sex" value="1" required > Male
+       <input type="radio" name="Sex" value="2" required> Female<br><br>
+
+      <div>
+        <label for="username">Username*:</label>
+        <input type="text" id="username" name="Username" minlength="8" maxlength="50" required>
+        </div>
+      <br>
+      <div>
+        <label for="pass">Password*:</label>
+        <input type="password" id="pass" name="Password"
+               minlength="8" maxlength="12" required>
+         <span class="note"><cite>(8-12 characters) </cite></span
+      </div>
+      <br><br>
+      Profile Picture:
+       <input type="file" name="Profile_Pic"><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset">
+
+
+  <br>
+    <footer>
+    <i>Copyright&copy; Team 10<br><a href="mailto:nikhilchandrare.mulagondla@mavs.uta.edu">nikhilchandrare.mulagondla@mavs.uta.edu</a><br>
+      <a href="mailto:chiranjeevidhee.bommareddy@mavs.uta.edu">chiranjeevidhee.bommareddy@mavs.uta.edu</a>
+  
+
+</footer>
+
+
+  </div>
+</div>
+
+</body>
+</html>

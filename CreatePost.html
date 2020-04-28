@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="pet.css">
+
+</head>
+<body id="wrapper">
+
+<header >
+    <meta charset="UTF-8">
+    <title>Create Page</title>
+    <h1>SOCIAL NETWORK</h1>
+</header>
+
+<div class="row">
+  <div class="column left" >
+
+    <nav>
+<a href='Profile.php' > Profile Home </a> <br>
+<a href='Post.php'> My Posts </a> <br>
+<a href='Trans.html'> View Posts on Specific Date</a> <br>
+<a href='Like.html'> Like a Post</a> <br>
+<a href='Comment.html'> Comment on Post</a> <br>
+<a href='#'> Create Post </a> <br>
+<a href='./Logout.php' > Logout </a>
+</nav>
+
+  </div>
+  <div class="column right" >
+   <img src="xxx.jpg" height="300px" width="100%">
+
+    <h2><font size="5">Create your Post</font></h2>
+    <p>Required information is marked with an asterick(*)</p><br>
+  <form action="./CreatePost.php" method="post">
+      Page Name*:
+       <input type="text" name="Page_Name" maxlength="100" required><br><br>
+
+      Text*:
+       <input type="radio" name="Image1" value="1" required> Yes
+       <input type="radio" name="Image1" value="2"required> No <br>
+
+      Enter Text:
+       <input type="text" name="ImageFile1"><br><br><br>
+
+      Image*:
+       <input type="radio" name="Image" value="1" required> Yes
+       <input type="radio" name="Image" value="2"required> No <br>
+
+      Upload Image:
+       <input type="file" name="ImageFile"><br><br><br>
+
+      Video*:
+       <input type="radio" name="Video" value="1" required> Yes
+       <input type="radio" name="Video" value="2"required> No <br>
+
+      Upload Video:
+       <input type="file" name="VideoFile"><br><br><br>
+
+
+      Audio*:
+       <input type="radio" name="Audio" value="1" required> Yes
+       <input type="radio" name="Audio" value="2"required> No <br>
+
+      Upload Audio:
+       <input type="file" name="AudioFile"><br><br><br>
+
+
+        <input type="submit" value="Create Post">
+        <input type="reset">
+  <br><br><br><br>
+    
+
+</form>
+</div>
+  </div>
+</div>
+
+</body>
+</html>
